@@ -42,8 +42,8 @@ def decrypt(C):
     # Charger et combiner les deux corpus pour générer la clé de déchiffrement
     url1 = "https://www.gutenberg.org/ebooks/13846.txt.utf-8"
     url2 = "https://www.gutenberg.org/ebooks/4650.txt.utf-8"
-    corpus1 = load_text_from_web(url1)
-    corpus2 = load_text_from_web(url2)
+    corpus1 = loadtext_from_web(url1)
+    corpus2 = loadtext_from_web(url2)
     corpus = corpus1 + corpus2
     
     # Analyse du corpus pour créer la liste de symboles
